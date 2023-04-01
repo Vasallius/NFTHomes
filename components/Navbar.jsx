@@ -2,19 +2,21 @@ import React from 'react'
 import { Box, Flex, Spacer, useColorModeValue, IconButton, useDisclosure, Stack, Text } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
+import Image from 'next/image';
+import Logo from '../public/logo.png'
+import { ChangeNetwork, ConnectModal, DisconnectButton, OutlineCard, Wallet } from '@xircus-web3/components';
 
 function Navbar() {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const links = [
         { href: '/', label: 'Home' },
-        { href: '/FindAPlace', label: 'Find a Place' },
-        { href: '/mylistings', label: 'My Listings' },
-        { href: '/my-profile', label: 'My Profile' },
+        { href: '/mylistings', label: 'Listings' },
+        { href: '/my-profile', label: 'Profile' },
     ];
 
     return (
-        <Box bg={useColorModeValue('white', 'gray.900')} px={4}>
+        <Box bg={useColorModeValue('white', 'gray.900')} px={14}>
             <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                 <IconButton
                     size={'md'}
@@ -23,12 +25,14 @@ function Navbar() {
                     display={{ md: 'none' }}
                     onClick={isOpen ? onClose : onOpen}
                 />
+
                 <Link href="/">
-
-                    <Text fontSize={'xl'} fontWeight={'bold'}>
-                        My App
+                    <div className='flex flex-row gap-4 justify-center'>
+                    <Image src={Logo} alt="Logo" width={40}/>
+                    <Text fontSize={'xl'} fontWeight={'bold'} className="self-center">
+                        NFThomes
                     </Text>
-
+                    </div>
                 </Link>
                 <Spacer />
                 <Box display={{ base: 'none', md: 'flex' }}>
@@ -41,6 +45,10 @@ function Navbar() {
 
                         </Link>
                     ))}
+                <ConnectModal>
+                    <Wallet />
+                </ConnectModal>
+
                 </Box>
             </Flex>
 
