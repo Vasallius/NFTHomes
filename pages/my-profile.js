@@ -4,7 +4,7 @@ const Profile = () => {
   return (
     <Box px={10} py={20}>
       <VStack spacing={10}>
-        <Avatar size="xl" name="John Doe" src="/images/boredape.jpg" />
+        <Avatar size="xl" name="John Doe" src="images/boredape.jpg" />
         <Heading size="xl">John Doe</Heading>
         <HStack>
           <Box>
