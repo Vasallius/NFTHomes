@@ -1,0 +1,27 @@
+{
+  "name": "with-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "yarn build && npx next export && serve out/"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.4",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@xircus-web3/components": "^1.0.10",
+    "@xircus-web3/react": "^1.0.91",
+    "framer-motion": "^10.9.2",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4"
+  }
+}
