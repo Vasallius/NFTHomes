@@ -1,5 +1,7 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { XircusProvider } from '@xircus-web3/react'
+import '../styles/globals.css'
+
 
 const config = {
   initialColorMode: 'dark',
