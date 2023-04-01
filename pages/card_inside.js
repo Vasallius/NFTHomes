@@ -1,13 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
-//import Footer from 'next/footer'
 
-//import { Container, Heading, VStack, Box } from '@chakra-ui/react'
 import { Container, Heading, Box } from '@chakra-ui/react'
 import { ChangeNetwork, ConnectModal, DisconnectButton, Wallet } from "@xircus-web3/components"
 import styles from '../styles/Home.module.css'
-
 
 import { Grid, GridItem } from '@chakra-ui/react'
 import { Stack, HStack, VStack, StackDivider } from "@chakra-ui/react"
