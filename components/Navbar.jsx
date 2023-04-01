@@ -8,8 +8,8 @@ function Navbar() {
 
     const links = [
         { href: '/', label: 'Home' },
+        { href: '/for-rent', label: 'Find a Place' },
         { href: '/mylistings', label: 'My Listings' },
-        { href: '/for-rent', label: 'For Rent' },
         { href: '/my-profile', label: 'My Profile' },
     ];
 
