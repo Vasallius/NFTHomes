@@ -1,13 +1,6 @@
 import Head from "next/head";
-import { Container, Heading, VStack, Box } from "@chakra-ui/react";
-import {
-  ChangeNetwork,
-  ConnectModal,
-  DisconnectButton,
-  OutlineCard,
-  Wallet,
-} from "@xircus-web3/components";
 import Navbar from "../components/Navbar";
+import Properties from "./Properties";
 
 export default function Home() {
   return (
@@ -18,7 +11,7 @@ export default function Home() {
         <meta name="description" content="Template created by Xircus" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <Container></Container>
+      <Properties />
     </>
   );
 }
