@@ -35,6 +35,8 @@ const FindAPlace = () => {
 
     return (
         <Box>
+            <Navbar />
+
             <Box backgroundImage="url('/images/listings-bg.jpg')" backgroundSize="cover" height="60vh" position="relative">
                 <Box
                     position="absolute"
@@ -51,7 +53,7 @@ const FindAPlace = () => {
                     </Text>
                 </Box>
             </Box>
-            <Box p="10">
+            <Box p="20">
                 <Heading size="xl" mb="4">
                     Featured Listings
                 </Heading>
@@ -79,7 +81,6 @@ const FindAPlace = () => {
                     ))}
                 </Box>
             </Box>
-            <Navbar />
         </Box>
     );
 };
