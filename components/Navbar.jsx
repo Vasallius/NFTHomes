@@ -11,7 +11,8 @@ function Navbar() {
 
     const links = [
         { href: '/', label: 'Home' },
-        { href: '/mylistings', label: 'Listings' },
+        { href: '/Listings', label: 'List' },
+        { href: '/Invest', label: 'Invest' },
         { href: '/my-profile', label: 'Profile' },
     ];
 
@@ -28,7 +29,7 @@ function Navbar() {
 
                 <Link href="/">
                     <div className='flex flex-row gap-4 justify-center'>
-                    <Image src={Logo} alt="Logo" width={40}/>
+                    <Image src={Logo} alt="Logo" width={38}/>
                     <Text fontSize={'xl'} fontWeight={'bold'} className="self-center">
                         NFThomes
                     </Text>
