@@ -136,13 +136,13 @@ export default function Home() {
                     </p>
 
                     <div class="grid w-full max-w-xl grid-cols-7 gap-6 mx-auto mt-6">
-                      <p class="flex items-center justify-center h-16 text-blue-300">Sa</p>
-                      <p class="flex items-center justify-center h-16 text-blue-300">Fr</p>
-                      <p class="flex items-center justify-center h-16 text-blue-300">Th</p>
-                      <p class="flex items-center justify-center h-16 text-blue-300">We</p>
-                      <p class="flex items-center justify-center h-16 text-blue-300">Tu</p>
-                      <p class="flex items-center justify-center h-16 text-blue-300">Mo</p>
                       <p class="flex items-center justify-center h-16 text-blue-300">Su</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">Mo</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">Tu</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">We</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">Th</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">Fr</p>
+                      <p class="flex items-center justify-center h-16 text-blue-300">Sa</p>
                     </div>
 
                     <div class="grid w-full max-w-xl grid-cols-7 gap-6 mx-auto">
