@@ -1,5 +1,5 @@
 import React from "react";
-
+import Pagination from "../components/Pagination";
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 
 const Landing = () => {
@@ -54,10 +54,12 @@ const Landing = () => {
             </Text>
           </Box>
         </Box>
+        <Pagination />
         <Box p="20">
           <Heading size="xl" mb="4">
             Featured Listings
           </Heading>
+          
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
             {listings.map((listing) => (
               <Box
@@ -73,6 +75,7 @@ const Landing = () => {
                   height="200px"
                   objectFit="cover"
                 />
+                
                 <Box p="6">
                   <Heading size="md" mb="2">
                     {listing.name}
