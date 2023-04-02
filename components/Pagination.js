@@ -34,10 +34,6 @@ const Pagination = () => {
       const handlePageClick = async (data) => {
         setPage(data.selected);
       };
-    
-      window.onload = function () {
-        sessionStorage.clear();
-      };
       
     
       return (
