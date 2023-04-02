@@ -18,7 +18,7 @@ export default function Listings() {
           <div class="flex justify-center mt-8 flex-grow">
             <div class="rounded-lg shadow-xl bg-gray-50 flex justify-center">
               <div class="m-4 flex justify-center">
-            
+
                 <div class="flex items-center justify-center w-full">
                   <label class="flex flex-col w-full h-32 border-4 border-dashed hover:bg-gray-100 hover:border-gray-300">
                     <div class="flex flex-col items-center justify-center pt-7">
@@ -60,19 +60,12 @@ export default function Listings() {
                   <input type="number" id="price" name="price" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-none rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter the price per night" required />
                 </div>
               </div>
-              <div class="flex items-center justify-center">
-                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">List Property</button>
+              <div class="flex items-center">
+                <button type="submit" class="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-700 hover:to-red-700 text-white font-bold py-2 px-4 rounded">List Property</button>
               </div>
             </form>
-
-
-
           </div>
-
         </div>
-
-
-
       </div>
     </div>
   );
