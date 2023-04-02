@@ -277,7 +277,7 @@ export default function Home() {
 
             <Box>
               <Grid
-                h='600px'
+                h='300px'
                 w='1200px'
                 templateRows='repeat(1, 1fr)'
                 templateColumns='repeat(1, 1fr)'
@@ -285,7 +285,42 @@ export default function Home() {
                 color='blackAlpha.700'
               >
 
-                <GridItem colSpan={10} bg='papayawhip' > Reviews </GridItem>
+                <GridItem colSpan={10}> 
+                <div class="flex-container">
+  <div>               
+     <div class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="bg-gray-200 text-gray-700 text-lg px-6 py-4">REVIEWS</div>
+
+    <div class="flex justify-between items-center px-6 py-4">
+      <div class="bg-blue-400 text-xs uppercase px-2 py-1 rounded-full border border-gray-200 text-gray-200 font-bold">Stayed</div>
+      <div class="text-sm text-gray-700">April 2, 2023</div>
+    </div>
+
+    <div class="px-6 py-4 border-t border-gray-200">
+      <div class="border rounded-lg p-4 bg-gray-200 text-gray-700">
+        This place is superb! Beautiful, clean and peaceful place... our worker's loved it. We enjoyed the stay and will definitely come back here again. 🥰 
+        <p></p>
+        The owner is kind and the caretaker is really nice and accommodating.
+      </div>
+    </div>
+
+    <div class="bg-gray-200 px-6 py-4">
+      <div class="uppercase text-xs text-gray-600 font-bold">Reviewee</div>
+
+      <div class="flex items-center pt-3">
+        <div class="bg-blue-700 w-12 h-12 flex justify-center items-center rounded-full uppercase font-bold text-white" style={{borderRadius: '50%', overflow: 'hidden'}}>
+          <img src="/images/boredape.jpg"></img>
+        </div>
+        <div class="ml-4">
+          <p class="font-bold text-gray-700">0xa1d...6b7</p>
+          <p class="text-sm text-gray-700 mt-1">Bored Ape #6969</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+                </GridItem>
 
               </Grid>
             </Box>

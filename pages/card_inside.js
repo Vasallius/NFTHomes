@@ -296,7 +296,6 @@ export default function Home() {
 
           <Box>
 
-
 <div class="flex-container">
   <div>               
      <div class="flex flex-col bg-white shadow-lg rounded-lg overflow-hidden">
