@@ -1954,7 +1954,7 @@ export const propertydata = [
     furnishing: "None",
     curfew: 0,
     date_posted: "2023-12-01",
-    image_link: "/images/listing2.png",
+    image_link: "/images/listing2.jpeg",
   },
   {
     property_id: 1000104,
