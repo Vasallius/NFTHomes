@@ -47,10 +47,10 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             textAlign="center"
           >
-            <Heading size="3xl" mb="4" color="white">
+            <Heading size="3xl" mb="4">
               Find Your <span className="highlight">Dream</span> Home
             </Heading>
-            <Text fontSize="xl" color="white">
+            <Text fontSize="xl">
               Explore unique places to stay and things to do
             </Text>
           </Box>
