@@ -32,67 +32,69 @@ const FindAPlace = () => {
   ];
 
   return (
-    <Box>
-      <Box
-        backgroundImage="url('/images/listings-bg.jpg')"
-        backgroundSize="cover"
-        height="60vh"
-        position="relative"
-      >
+    <>
+      <Box>
         <Box
-          position="absolute"
-          top="50%"
-          left="50%"
-          transform="translate(-50%, -50%)"
-          textAlign="center"
+          backgroundImage="url('/images/listings-bg.jpg')"
+          backgroundSize="cover"
+          height="60vh"
+          position="relative"
         >
-          <Heading size="3xl" mb="4" color="white">
-            Find Your Dream Home
-          </Heading>
-          <Text fontSize="xl" color="white">
-            Explore unique places to stay and things to do
-          </Text>
+          <Box
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-50%, -50%)"
+            textAlign="center"
+          >
+            <Heading size="3xl" mb="4" color="white">
+              Find Your <span className="highlight">Dream</span> Home
+            </Heading>
+            <Text fontSize="xl" color="white">
+              Explore unique places to stay and things to do
+            </Text>
+          </Box>
         </Box>
-      </Box>
-      <Box p="20">
-        <Heading size="xl" mb="4">
-          Featured Listings
-        </Heading>
-        <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
-          {listings.map((listing) => (
-            <Box
-              key={listing.id}
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-            >
-              <Image
-                src={listing.image}
-                alt={listing.name}
-                height="240px"
-                objectFit="cover"
-              />
-              <Box p="6">
-                <Heading size="md" mb="2">
-                  {listing.name}
-                </Heading>
-                <Text fontSize="md" mb="2">
-                  {listing.price}
-                </Text>
-                <Box display="flex" alignItems="center" mb="2">
-                  <Box as="span" mr="1">
-                    {listing.rating}
-                  </Box>
-                  <Box as="span" color="gray.600" fontSize="sm">
-                    ({listing.reviews} reviews)
+        <Box p="20">
+          <Heading size="xl" mb="4">
+            Featured Listings
+          </Heading>
+          <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
+            {listings.map((listing) => (
+              <Box
+                key={listing.id}
+                borderWidth="1px"
+                borderRadius="lg"
+                overflow="hidden"
+              >
+                <Image
+                  src={listing.image}
+                  alt={listing.name}
+                  height="240px"
+                  objectFit="cover"
+                />
+                <Box p="6">
+                  <Heading size="md" mb="2">
+                    {listing.name}
+                  </Heading>
+                  <Text fontSize="md" mb="2">
+                    {listing.price}
+                  </Text>
+                  <Box display="flex" alignItems="center" mb="2">
+                    <Box as="span" mr="1">
+                      {listing.rating}
+                    </Box>
+                    <Box as="span" color="gray.600" fontSize="sm">
+                      ({listing.reviews} reviews)
+                    </Box>
                   </Box>
                 </Box>
               </Box>
-            </Box>
-          ))}
+            ))}
+          </Box>
         </Box>
       </Box>
-    </Box>
+    </>
   );
 };
 
