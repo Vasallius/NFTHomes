@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Properties from "./Properties";
 import Landing from "./Landing";
 import Search from "../components/Search";
+import Pagination from "../components/Pagination";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Landing />
       <Search />
+      <Pagination />
       <Properties />
     </>
   );

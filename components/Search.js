@@ -33,7 +33,7 @@ const Search = () => {
           borderRadius="1000px"
           borderWidth="3px"
           borderColor="gray.50"
-          boxShadow="0px 0px 10px 1px #fa68a2"
+          
         >
           <GridItem
             justifyContent="center"
