@@ -13,7 +13,6 @@ function Navbar() {
         { href: '/', label: 'Home' },
         { href: '/Listings', label: 'List' },
         { href: '/Invest', label: 'Invest' },
-        { href: '/my-profile', label: 'Profile' },
     ];
 
     return (
