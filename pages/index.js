@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Properties from "./Properties";
 import Listings from "./Listings";
+import FindAPlace from "./FindAPlace";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <meta name="description" content="Template created by Xircus" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <Listings />
+      <Navbar />
+      <FindAPlace />
       <Properties />
     </>
   );
