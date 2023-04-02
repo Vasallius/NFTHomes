@@ -61,7 +61,6 @@ const Landing = () => {
           </Heading>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
             {listings.map((listing, key) => (
-              <Link href="/card_inside1">
                 <Box
                   borderWidth="1px"
                   borderRadius="lg"
@@ -92,7 +91,6 @@ const Landing = () => {
                     </Box>
                   </Box>
                 </Box>
-              </Link>
             ))}
           </Box>
         </Box>
