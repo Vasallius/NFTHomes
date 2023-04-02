@@ -1,9 +1,8 @@
 import React from "react";
-import Head from "next/head";
 
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
 
-const FindAPlace = () => {
+const Landing = () => {
   const listings = [
     {
       id: 1,
@@ -70,7 +69,8 @@ const FindAPlace = () => {
                 <Image
                   src={listing.image}
                   alt={listing.name}
-                  height="240px"
+                  width="500px"
+                  height="200px"
                   objectFit="cover"
                 />
                 <Box p="6">
@@ -98,4 +98,4 @@ const FindAPlace = () => {
   );
 };
 
-export default FindAPlace;
+export default Landing;
