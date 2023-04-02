@@ -77,7 +77,7 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
   return (
     <Center>
       <Container borderTop='none' 
-      mt='0'
+      mt='5'
       borderBottomRadius='30px' borderWidth='3px' borderColor='gray.50' height='fit-content' pb='5' pt='7' alignItems='stretch' minW='90%'>
         <Flex flexDirection='row' flexWrap={'wrap'} justify='center'>
           {/* Rate and Lot Area */}
