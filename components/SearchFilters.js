@@ -104,31 +104,31 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
                   Min
                 </RangeSliderMark>
                 <RangeSliderTrack >
-                  <RangeSliderFilledTrack bg='#7b1113' />
+                  <RangeSliderFilledTrack bg='#fa68a2' />
                 </RangeSliderTrack>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`₱${sh.sfrate[1]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={1} />
+                  <RangeSliderThumb bg='#fa68a2' index={1} />
                 </Tooltip>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`₱${sh.sfrate[0]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={0} />
+                  <RangeSliderThumb bg='#fa68a2' index={0} />
                 </Tooltip>
 
               </RangeSlider>
@@ -138,7 +138,7 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
               <Text fontWeight='black' ml='-2' mt='2em' >
                 Lot Type
               </Text >
-              <CheckboxGroup size='sm' onChange={(v) => { setlotType(v) }} defaultValue={sh.sflotType} value={lotType}>
+              <CheckboxGroup colorScheme='red' size='sm' onChange={(v) => { setlotType(v) }} defaultValue={sh.sflotType} value={lotType}>
                 <Stack ml='-2' mt='2' direction={['column']}>
                   <Checkbox value='0'>House</Checkbox>
                   <Checkbox value='1'>Apartment</Checkbox>
@@ -173,31 +173,31 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
                   Min
                 </RangeSliderMark>
                 <RangeSliderTrack >
-                  <RangeSliderFilledTrack bg='#7b1113' />
+                  <RangeSliderFilledTrack bg='#fa68a2' />
                 </RangeSliderTrack>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${bedroom[1]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={1} />
+                  <RangeSliderThumb bg='#fa68a2' index={1} />
                 </Tooltip>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${bedroom[0]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={0} />
+                  <RangeSliderThumb bg='#fa68a2' index={0} />
                 </Tooltip>
 
               </RangeSlider>
@@ -225,31 +225,31 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
                   Min
                 </RangeSliderMark>
                 <RangeSliderTrack >
-                  <RangeSliderFilledTrack bg='#7b1113' />
+                  <RangeSliderFilledTrack bg='#fa68a2' />
                 </RangeSliderTrack>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${beds[1]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={1} />
+                  <RangeSliderThumb bg='#fa68a2' index={1} />
                 </Tooltip>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${beds[0]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={0} />
+                  <RangeSliderThumb bg='#fa68a2' index={0} />
                 </Tooltip>
 
               </RangeSlider>
@@ -277,31 +277,31 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
                   Min
                 </RangeSliderMark>
                 <RangeSliderTrack >
-                  <RangeSliderFilledTrack bg='#7b1113' />
+                  <RangeSliderFilledTrack bg='#fa68a2' />
                 </RangeSliderTrack>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${bathroom[1]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={1} />
+                  <RangeSliderThumb bg='#fa68a2' index={1} />
                 </Tooltip>
                 <Tooltip
                   isOpen
                   bg='none'
-                  color='#7b1113'
+                  color='#fa68a2'
                   placement='bottom'
                   fontWeight='black'
                   shadow='none'
                   mt='-2'
                   label={`${bathroom[0]}`}
                 >
-                  <RangeSliderThumb bg='#7b1113' index={0} />
+                  <RangeSliderThumb bg='#fa68a2' index={0} />
                 </Tooltip>
 
               </RangeSlider>
@@ -314,7 +314,7 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
               <Text fontWeight='black' ml='-2' mt='2em' >
                Host Language
               </Text >
-              <CheckboxGroup size='sm' onChange={(v) => { setOccupy(v) }} defaultValue={sh.sfoccupy} value={occupy}>
+              <CheckboxGroup colorScheme='red' size='sm' onChange={(v) => { setOccupy(v) }} defaultValue={sh.sfoccupy} value={occupy}>
                 <Stack ml='-2' mt='2' direction={['column']}>
                   <Checkbox value='0'>English</Checkbox>
                   <Checkbox value='1'>Filipino</Checkbox>
@@ -333,7 +333,7 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
               <Text fontWeight='black' ml='-2' mt='2em' >
               Amenities
               </Text >
-              <CheckboxGroup size='sm' onChange={(v) => { setInclusion(v) }} defaultValue={sh.sfinclusion} value={inclusion}>
+              <CheckboxGroup colorScheme='red' size='sm' onChange={(v) => { setInclusion(v) }} defaultValue={sh.sfinclusion} value={inclusion}>
                 <Stack ml='-2' mt='2' direction={['column']}>
                   <Checkbox value='0'>Wifi</Checkbox>
                   <Checkbox value='1'>Kitchen</Checkbox>
@@ -347,7 +347,7 @@ const SearchFilters = ({ setKeywords, keywords, setQuery, setPage, filters, setF
               <Text fontWeight='black' ml='-2' mt='2em' >
                Payment
               </Text >
-              <CheckboxGroup size='sm' onChange={(v) => { setCurfew(v) }} defaultValue={sh.sfcurfew} value={curfew}>
+              <CheckboxGroup colorScheme='red' size='sm' onChange={(v) => { setCurfew(v) }} defaultValue={sh.sfcurfew} value={curfew}>
                 <Stack ml='-2' mt='2' direction={['column']}>
                   <Checkbox value='0'>Fiat</Checkbox>
                   <Checkbox value='1'>Cryptocurrency</Checkbox>
