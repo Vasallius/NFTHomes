@@ -308,8 +308,8 @@ export default function Home() {
 
     <div class="px-6 py-4 border-t border-gray-200">
       <div class="border rounded-lg p-4 bg-gray-200 text-gray-700">
-        This place is superb! Beautiful, clean and peaceful place... our worker's loved it. We enjoyed the stay and will definitely come back here again. 🥰 
-        <p></p>
+{        `This place is superb! Beautiful, clean and peaceful place... our worker's loved it. We enjoyed the stay and will definitely come back here again. `
+}        <p></p>
         The owner is kind and the caretaker is really nice and accommodating.
       </div>
     </div>
