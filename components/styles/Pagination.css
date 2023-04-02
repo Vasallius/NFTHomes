@@ -1,31 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.highlight {
-  background: linear-gradient(-90deg,#fa68a2, #ea6175);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .item {
   align-items: center;
   color: var(--upd900);
@@ -40,17 +12,17 @@ a {
 
 .item:hover {
   transition: background-color 1s ease;
-  background-color: gray;
+  background-color: var(--upd900);
   color: white;
 }
 
 .page-active {
-  border: 2px solid gray;
+  border: 2px solid var(--upd900);
 }
 
 .break {
   align-items: center;
-  color: gray;
+  color: var(--upd900);
   cursor: pointer;
   display: flex;
   font-size: 14px;
@@ -69,6 +41,7 @@ a {
 
 .pagination {
   align-items: center;
+  background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -96,13 +69,5 @@ a {
   left: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+
 
