@@ -1,6 +1,7 @@
 import React from "react";
-import Pagination from "../components/Pagination";
+
 import { Box, Center, Heading, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Landing = () => {
   const listings = [
@@ -54,45 +55,45 @@ const Landing = () => {
             </Text>
           </Box>
         </Box>
-        <Pagination />
         <Box p="20">
           <Heading size="xl" mb="4">
             Featured Listings
           </Heading>
-          
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
             {listings.map((listing) => (
-              <Box
-                key={listing.id}
-                borderWidth="1px"
-                borderRadius="lg"
-                overflow="hidden"
-              >
-                <Image
-                  src={listing.image}
-                  alt={listing.name}
-                  width="500px"
-                  height="200px"
-                  objectFit="cover"
-                />
-                
-                <Box p="6">
-                  <Heading size="md" mb="2">
-                    {listing.name}
-                  </Heading>
-                  <Text fontSize="md" mb="2">
-                    {listing.price}
-                  </Text>
-                  <Box display="flex" alignItems="center" mb="2">
-                    <Box as="span" mr="1">
-                      {listing.rating}
-                    </Box>
-                    <Box as="span" color="gray.600" fontSize="sm">
-                      ({listing.reviews} reviews)
+              <Link href={`/card_inside${listing.id}`}>
+                <Box
+                  key={listing.id}
+                  borderWidth="1px"
+                  borderRadius="lg"
+                  overflow="hidden"
+                  href="/card_inside.js"
+                >
+                  <Image
+                    src={listing.image}
+                    alt={listing.name}
+                    width="500px"
+                    height="200px"
+                    objectFit="cover"
+                  />
+                  <Box p="6">
+                    <Heading size="md" mb="2">
+                      {listing.name}
+                    </Heading>
+                    <Text fontSize="md" mb="2">
+                      {listing.price}
+                    </Text>
+                    <Box display="flex" alignItems="center" mb="2">
+                      <Box as="span" mr="1">
+                        {listing.rating}
+                      </Box>
+                      <Box as="span" color="gray.600" fontSize="sm">
+                        ({listing.reviews} reviews)
+                      </Box>
                     </Box>
                   </Box>
                 </Box>
-              </Box>
+              </Link>
             ))}
           </Box>
         </Box>
