@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Properties from "./Properties";
 import Landing from "./Landing";
+import Search from "../components/Search";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Landing />
+      <Search />
       <Properties />
     </>
   );
