@@ -44,7 +44,7 @@ const Search = () => {
             <Button variant="unstyled">
               <IoFilter
                 type="button"
-                color="#58152e"
+                color="#fa68a2"
                 cursor="pointer"
                 size={20}
                 onClick={() => setSfVisible(!sfVisible)}
@@ -86,7 +86,7 @@ const Search = () => {
           <GridItem display="flex" pl="40" pr="1">
             <IoSearchCircle
               type="button"
-              color="#58152e"
+              color="#fa68a2"
               cursor="pointer"
               size={39}
             />
