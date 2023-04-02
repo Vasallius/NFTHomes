@@ -1,11 +1,9 @@
-import { Box, Center, Flex, Heading, Text } from '@chakra-ui/react';
-import Navbar from '../components/Navbar';
+import { Box, Center, Flex, Heading, Text } from "@chakra-ui/react";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
-    <Navbar />
-
       <Box
         backgroundImage="url('/images/heroimage.png')"
         backgroundSize="cover"
@@ -24,9 +22,7 @@ const Home = () => {
             <Heading size="3xl" mb="4">
               Welcome to NFTHomes!
             </Heading>
-            <Text fontSize="xl">
-              The web3 alternative to Airbnb
-            </Text>
+            <Text fontSize="xl">The web3 alternative to Airbnb</Text>
           </Box>
         </Flex>
       </Box>
