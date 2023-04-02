@@ -63,6 +63,7 @@ const Landing = () => {
             {listings.map((listing, key) => (
               <Link href="/card_inside1">
                 <Box
+                  key = {listing.id}
                   borderWidth="1px"
                   borderRadius="lg"
                   overflow="hidden"
