@@ -56,6 +56,7 @@ const Search = () => {
               borderWidth="0"
               focusBorderColor="transparent"
               placeholder="Location"
+              _placeholder={{ color: 'gray.300' }}
             />
           </GridItem>
           <GridItem>
