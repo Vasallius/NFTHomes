@@ -79,46 +79,50 @@ const Invest = () => {
       <Navbar />
       <div className="p-14">
         <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
-          {estatelistings.map((estate) => (
-            <Box
-              key={estate.id}
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-            >
-              <Image
-                src={estate.image}
-                alt={estate.name}
-                width="500px"
-                height="200px"
-                objectFit="cover"
-              />
-              <Box p="6">
-                <Heading size="md" mb="2">
-                  {estate.name} in {estate.location}
-                </Heading>
-                <Text fontSize="md" mb="2">
-                  {estate.description}
-                </Text>
-                <Progress
-                  size="sm"
-                  value={(estate.current_funds / estate.target_fund) * 100}
-                />
+          {estatelistings.map((estate, key) => (
+            <div key={`${estate.id}+${key}`}>
+              <Link href="/" passHref={true}>
+                <Box
+                  key={estate.id}
+                  borderWidth="1px"
+                  borderRadius="lg"
+                  overflow="hidden"
+                >
+                  <Image
+                    src={estate.image}
+                    alt={estate.name}
+                    width="500px"
+                    height="200px"
+                    objectFit="cover"
+                  />
+                  <Box p="6">
+                    <Heading size="md" mb="2">
+                      {estate.name} in {estate.location}
+                    </Heading>
+                    <Text fontSize="md" mb="2">
+                      {estate.description}
+                    </Text>
+                    <Progress
+                      size="sm"
+                      value={(estate.current_funds / estate.target_fund) * 100}
+                    />
 
-                <Box display="flex" alignItems="center" mt="2">
-                  <Box as="span" mr="1">
-                    Ŧ {estate.current_funds} Raised
-                  </Box>
-                  <Box as="span" color="gray.600" fontSize="sm">
-                    (
-                    {Math.round(
-                      (estate.current_funds / estate.target_fund) * 100
-                    )}
-                    %)
+                    <Box display="flex" alignItems="center" mt="2">
+                      <Box as="span" mr="1">
+                        Ŧ {estate.current_funds} Raised
+                      </Box>
+                      <Box as="span" color="gray.600" fontSize="sm">
+                        (
+                        {Math.round(
+                          (estate.current_funds / estate.target_fund) * 100
+                        )}
+                        %)
+                      </Box>
+                    </Box>
                   </Box>
                 </Box>
-              </Box>
-            </Box>
+              </Link>
+            </div>
           ))}
         </Box>
       </div>
