@@ -29,7 +29,8 @@ export default function Details() {
               Guest access
             </Text>
             <ul>
-              <li>Guests can access the grand lobby and the two side outdoor pools, along with tables and playgrounds for kids.</li>
+              <li>Guests can access the grand lobby and the two side outdoor pools, along with tables and playgrounds for kids. </li>
+              <br></br>
             </ul>
             <Text fontSize="lg" fontWeight="bold" mb="4">
               Other things to note
