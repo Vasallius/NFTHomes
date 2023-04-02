@@ -127,7 +127,7 @@ export default function Home() {
               >
 
                 <GridItem colSpan={10}>
-                  <div class="flex flex-col items-center justify-center px-6">
+                  <div class="flex flex-col items-center justify-center px-6 bg-gray-900">
                     <h1 class="text-2xl font-bold text-center text-white">Calendar</h1>
                     <p class="flex items-end mt-2 text-base text-center text-gray-400 gap-x-2">Find available 
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-red-500 shrink-0">
