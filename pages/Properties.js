@@ -8,7 +8,6 @@ import { Button, ButtonGroup } from "@chakra-ui/button";
 
 const Properties = () => {
   const [property, setProperty] = useState(propertydata);
-  console.log(property);
   return (
     <>
       <div className="p-14 m-auto">
