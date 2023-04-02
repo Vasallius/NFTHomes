@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Properties from "./Properties";
-import Listings from "./Listings";
-import FindAPlace from "./FindAPlace";
+import Landing from "./Landing";
 
 export default function Home() {
   return (
@@ -13,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Navbar />
-      <FindAPlace />
+      <Landing />
       <Properties />
     </>
   );

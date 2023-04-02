@@ -8,7 +8,6 @@ import { Button, ButtonGroup } from "@chakra-ui/button";
 
 const Properties = () => {
   const [property, setProperty] = useState(propertydata);
-  console.log(property);
   return (
     <>
       <div className="p-14 m-auto">
@@ -44,7 +43,10 @@ const Properties = () => {
                         </Stack>
                         <Stack mt="1">
                           <Text fontSize="sm" as="b">
-                            ₱{data.rate} - ₱{data.rate + 1000}
+                            {data.rate} USDT{" "}
+                            <span className="text-gray-400 font-semibold">
+                              ({data.rate * 56} PHP)
+                            </span>
                           </Text>
                         </Stack>
                       </CardBody>
