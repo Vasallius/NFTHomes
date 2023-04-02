@@ -28,7 +28,7 @@ a {
 
 .item {
   align-items: center;
-  color: var(--upd900);
+  color: #fa68a2;
   cursor: pointer;
   display: flex;
   font-size: 14px;
@@ -40,17 +40,17 @@ a {
 
 .item:hover {
   transition: background-color 1s ease;
-  background-color: gray;
+  background-color: #fa68a2;
   color: white;
 }
 
 .page-active {
-  border: 2px solid gray;
+  border: 2px solid #fa68a2;
 }
 
 .break {
   align-items: center;
-  color: gray;
+  color: #fa68a2;
   cursor: pointer;
   display: flex;
   font-size: 14px;
