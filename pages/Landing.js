@@ -61,37 +61,40 @@ const Landing = () => {
           </Heading>
           <Box display="grid" gridTemplateColumns="repeat(3, 1fr)" gridGap="8">
             {listings.map((listing, key) => (
-                <Box
-                  key = {listing.id}
-                  borderWidth="1px"
-                  borderRadius="lg"
-                  overflow="hidden"
-
-                >
-                  <Image
-                    src={listing.image}
-                    alt={listing.name}
-                    width="500px"
-                    height="200px"
-                    objectFit="cover"
-                  />
-                  <Box p="6">
-                    <Heading size="md" mb="2">
-                      {listing.name}
-                    </Heading>
-                    <Text fontSize="md" mb="2">
-                      {listing.price}
-                    </Text>
-                    <Box display="flex" alignItems="center" mb="2">
-                      <Box as="span" mr="1">
-                        {listing.rating}
-                      </Box>
-                      <Box as="span" color="gray.600" fontSize="sm">
-                        ({listing.reviews} reviews)
+              <div key={`${listing.id}+${key}`}>
+                <Link href="/card_inside1" passHref={true}>
+                  <Box
+                    key={listing.id}
+                    borderWidth="1px"
+                    borderRadius="lg"
+                    overflow="hidden"
+                  >
+                    <Image
+                      src={listing.image}
+                      alt={listing.name}
+                      width="500px"
+                      height="200px"
+                      objectFit="cover"
+                    />
+                    <Box p="6">
+                      <Heading size="md" mb="2">
+                        {listing.name}
+                      </Heading>
+                      <Text fontSize="md" mb="2">
+                        {listing.price}
+                      </Text>
+                      <Box display="flex" alignItems="center" mb="2">
+                        <Box as="span" mr="1">
+                          {listing.rating}
+                        </Box>
+                        <Box as="span" color="gray.600" fontSize="sm">
+                          ({listing.reviews} reviews)
+                        </Box>
                       </Box>
                     </Box>
                   </Box>
-                </Box>
+                </Link>
+              </div>
             ))}
           </Box>
         </Box>
